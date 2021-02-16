@@ -22,8 +22,8 @@ body {
 
 <body>
 <section id="imageLoader" class="hidden">
-  <img class="hidden" src="images/tail_hook.png" alt="tail_hook">
-  <img class="hidden" src="images/tail_piece.png" alt="tail_piece">
+  <img class="hidden" src="images/tail_hook.png" alt="tail_hook" data-name="tail_hook">
+  <img class="hidden" src="images/tail_piece.png" alt="tail_piece" data-name="tail_piece">
 </section>
 
 <main>
@@ -99,11 +99,11 @@ def update(dt):
 
 <script>
 // Constants that control the wobble effect
-SEGMENT_SIZE = 50;  // pixels from one segment to the next
-ANGLE = 2.5;  // Base direction for the tail (radians)
-PHASE_STEP = 0.3;  // How much the phase differs in each tail piece (radians)
-WOBBLE_AMOUNT = 0.5;  // How much of a wobble there is (radians)
-SPEED = 4.0;  // How fast the wobble moves (radians per second)
+const SEGMENT_SIZE = 50;  // pixels from one segment to the next
+const ANGLE = 2.5;  // Base direction for the tail (radians)
+const PHASE_STEP = 0.3;  // How much the phase differs in each tail piece (radians)
+const WOBBLE_AMOUNT = 0.5;  // How much of a wobble there is (radians)
+const SPEED = 4.0;  // How fast the wobble moves (radians per second)
 
 // Dimensions of the screen (pixels)
 WIDTH = 800;
